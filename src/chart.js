@@ -13,7 +13,7 @@ function getLabel(el, i, data) {
   x.setSeconds(0);
   x.setMilliseconds(0);
 
-  return x.toUTCString();
+  return x.toString();
 }
 
 export function createChart(container, data, isActive) {
@@ -36,10 +36,7 @@ export function createChart(container, data, isActive) {
     },
     options: {
         legend: {
-            display: true,
-            labels: {
-                text: "d"
-            }
+            display: false,
         },
         scales: {
             xAxes: [{ ticks: { display: false } }],
