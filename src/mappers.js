@@ -8,13 +8,13 @@ export function mapServerData(serverData) {
       geometry: 
       {
         type: "Point",
-        coordinates: [obj.long, obj.lat]
+        coordinates: [obj.long, obj.lat],
       },
       properties: {
-        iconCaption: obj.serialNumber
+          iconCaption: index,
       },
       options: {
-        preset: getObjectPreset(obj)
+          preset: getObjectPreset(obj)
       }
     }))
   };

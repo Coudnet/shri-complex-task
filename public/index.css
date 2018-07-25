@@ -3,6 +3,7 @@ body,
 #map {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .details-info {
